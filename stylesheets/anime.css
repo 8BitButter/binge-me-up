@@ -1,0 +1,38 @@
+/* Update the styles for the container and the list */
+.anime {
+    width: 100%;
+}
+
+.ani-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collection-name {
+    font-family: "Rubik Bubbles";
+    color: aliceblue;
+    font-size: 3rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+/* Adjust the styles for the thumbnails */
+.thumbnails {
+    width: 20rem;
+    height: 26rem;
+    margin: 1.5rem;
+}
+
+/* Ensure proper spacing between the list items */
+li {
+    list-style-type: none;
+}
+
+/* Media query for smaller screens if needed */
+@media only screen and (max-width: 768px) {
+    .thumbnails {
+        width: 100%;
+        margin: 1rem;
+    }
+}

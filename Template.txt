@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Multimedia Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <a class="logo" href="#">
+      <img src="./images/icon.png" width="150" height="150" alt="">
+      Binge Me Up
+    </a>
+
+    <nav>
+      <div class="nav-con">
+        <li><a href="#"><img src="./images/home.png" width="65" height="65" alt=""></a></li>
+        <li><a href="#"><img src="./images/movies.png" width="65" height="65" alt=""></a></li>
+        <li><a href="#"><img src="./images/anime.png" width="65" height="65" alt=""></a></li>
+        <li><a href="#"><img src="./images/music.png" width="65" height="65" alt=""></a></li>
+        <li><a href="#"><img src="./images/about.png" width="65" height="65" alt=""></a></li>
+        </ul>
+    </nav>
+  </div>
+
+
+  <section>
+    <div class="">
+      <!-- Your content goes here -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="./images/icon.png" width="50" height="50" alt="">
+        Binge Me Up
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/8BitButter" target="_blank"><img src="./images/github.png" width="30" height="30"
+            alt=""></a>
+        <a href="rajatyofficial@gmail.com" target="_blank"><img src="./images/gmail.png" width="30" height="30"
+            alt=""></a>
+        <a href="#" target="_blank"><img src="./images/linkedin.png" width="30" height="30" alt=""></a>
+      </div>
+    </div>
+
+    <p class="footer-text">
+      &copy; 2023 Binge Me Up. All rights reserved (Not Really). Designed with ❤️ by 8BitButter.
+    </p>
+  </footer>
+
+
+</body>
+
+</html>
+
+
+
+
+body {
+  background-color: #1f1f1f;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333333;
+}
+
+.logo {
+  font-family: Rubik Bubbles;
+  color: aliceblue;
+  font-size: 5rem;
+}
+
+
+nav {
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+nav .nav-con {
+  display: flex;
+  align-items: center;
+}
+
+.nav-con {
+  list-style: none;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-con li {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-con li:hover {
+  transform: scale(1.8);
+  /* Increase size on hover */
+}
+
+.nav-con li a {
+  display: block;
+  position: relative;
+}
+
+.nav-con li a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #8a2be2;
+  /* Purple color */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+footer {
+  background-color: #333333;
+  color: aliceblue;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  font-family: 'Rubik Bubbles', sans-serif;
+  font-size: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}

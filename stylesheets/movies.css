@@ -1,0 +1,45 @@
+/* Update the styles for the container and the list */
+.movies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mov-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto the next line */
+    justify-content: space-around;
+    /* Distribute items with equal space around them */
+}
+
+.collection-name {
+    font-family: Rubik Bubbles;
+    color: aliceblue;
+    font-size: 3rem;
+    margin: 1.5rem;
+    text-align: center; /* Center the text within the container */
+  }
+
+/* Adjust the styles for the thumbnails */
+.thumbnails {
+    width: 20rem;
+    height: 26rem;
+    margin: 1.5rem;
+    /* Adjust the margin to your preference */
+}
+
+/* Ensure proper spacing between the list items */
+li {
+    list-style-type: none;
+}
+
+/* Media query for smaller screens if needed */
+@media only screen and (max-width: 768px) {
+    .thumbnails {
+        width: 100%;
+        /* Make thumbnails take up 100% of the width on smaller screens */
+        margin: 1rem;
+        /* Adjust the margin to your preference */
+    }
+}

@@ -1,0 +1,36 @@
+/* Apply basic styling to the section */
+section {
+    margin: 20px;
+  }
+  
+  /* Style the container with class "index" */
+  .home {
+    display: flex;
+  }
+  
+  /* Style the individual tabs with class "tabs" */
+  .tabs {
+    flex: 1; /* Distribute available space equally among tabs */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the images inside the tabs */
+  .tabs img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: add border radius for a rounded look */
+  }
+
+  /* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs{
+    width: 100%;
+    height: auto;
+  }
+}
+
